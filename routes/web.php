@@ -12,12 +12,14 @@
 */
 
 Route::get('/', function () { //ruta en el navegador , segunda parte es la funcion que se ejecute
-    return view('welcome');
+    return view('plantilla');
 });
 
 
 Route::get('/listar',function(){
-    echo "prueba 1564021";
+    //echo "prueba 1564021";
+    $arreglo=array("nombre"=>"Fabian","apellido"=>"Retirado");
+    return json_encode($arreglo);
 });
 
 Route::get('/listarusuario',function(){
@@ -40,3 +42,7 @@ Route::view('/listaViewMascota','mascotas.lista');
 Route::get('/listarMascota','ControllerProducto@index');
 
 Route::resource('/mascota','ControllerMascota');
+
+Route::post('/probarPost',function(){
+    echo "prueba post";
+})->name('probarPost');

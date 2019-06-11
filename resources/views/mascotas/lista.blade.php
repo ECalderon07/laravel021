@@ -1,13 +1,8 @@
-<html>
-    <head>
-        <title></title>
-    </head>
-    <body>
-        <h1>Vista listar mascota</h1>
-{{"Lista mascota"}}
+@extends('plantilla')
 
-<p>{{$nombreMascota??""}}</p>
-<?php is_null($nombreMascota)?$nombreMascota:'' ?>
-    </body>
-</html>
 
+@section('menu')
+<h1>menu</h1>
+@end
+
+<button class='btn btn-danger'>INGRESAR</button>
