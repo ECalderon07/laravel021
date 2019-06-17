@@ -6,6 +6,7 @@
     <body>
         @yield('menu')        
         @yield('sidebar')
+        @yield('contenedorPrincipal')
         @yield('footer')
         
         <script src='{{asset("/js/app.js")}}' />

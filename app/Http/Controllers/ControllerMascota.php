@@ -14,7 +14,11 @@ class ControllerMascota extends Controller
     public function index()
     {
         //
-        echo "Desde index controller";
+       
+        
+       $razaCanino=['dalmata','pastor alemàn', 'bullterrier','chiguagua'];
+        
+        return view('admin.indexAdmin',['raza'=>$razaCanino]);
     }
 
     /**
