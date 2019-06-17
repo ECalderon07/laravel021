@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () { //ruta en el navegador , segunda parte es la funcion que se ejecute
-    return view('plantilla');
+    return view('usuario.indexUser');
 });
 
 
