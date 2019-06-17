@@ -6,20 +6,16 @@
 
 @section('contenedorPrincipal')
 
-    @if ($raza[0] === 'pitbull')
-        <h1>Raza Pitbull</h1>
-    @else
-        <h1>Raza diferente a Pitbull</h1>
-    @endif
+    <h1>{{$raza->nombre}}</h1>
 
 
 
 
-    <select>    
+<!--    <select>    
     @foreach($raza as $r)
     <option>{{$r}}</option>
     @endforeach
-    </select>
+    </select>-->
 @endSection
 
 @section('footer')

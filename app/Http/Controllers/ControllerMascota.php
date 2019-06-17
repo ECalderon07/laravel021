@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Mascota; //importar el modelo
+
 
 class ControllerMascota extends Controller
 {
@@ -52,7 +54,9 @@ class ControllerMascota extends Controller
     public function show($id)
     {
         //
-        echo "Desde mètodo show ".$id;
+        $mascota = new Mascota();
+        $resultado=$mascota->find($id);
+        return view('admin.indexAdmin',['raza'=>$resultado]);
     }
 
     /**
